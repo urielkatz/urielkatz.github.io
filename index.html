@@ -2,7 +2,6 @@
   </head>
 <body>
 <script>
-function getMobileOperatingSystem() {
   var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
     if (/android/i.test(userAgent)) {
@@ -12,7 +11,6 @@ function getMobileOperatingSystem() {
     if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
         window.location = "ios.html";
     }
-}
 </script>
 </body>
 </html>
