@@ -1,0 +1,15 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8" /><title>Butler</title><meta name="viewport" content="width=device-width, initial-scale=1.0" /></head>
+<script>
+function getMobileOperatingSystem() {
+  var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    if (/android/i.test(userAgent)) {
+        window.location = "android.html";
+    }
+
+    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        window.location = "ios.html";
+    }
+}
+</script>
+</html>
